@@ -1,0 +1,1341 @@
+{
+  "msg": "操作成功",
+  "code": "0",
+  "ReturnData": {
+    "startProcess": true,
+    "datas": {
+      "UserViewUrl": {
+        "RecursionLimit": null,
+        "ContentType": null,
+        "JsonRequestBehavior": 1,
+        "MaxJsonLength": 2147483647,
+        "Data": null,
+        "ContentEncoding": null
+      },
+      "WorkflowHandlerUrl": {
+        "RecursionLimit": null,
+        "ContentType": null,
+        "JsonRequestBehavior": 1,
+        "MaxJsonLength": 2147483647,
+        "Data": "",
+        "ContentEncoding": null
+      },
+      "ActivityTemplateConfigs": {
+        "RecursionLimit": null,
+        "ContentType": null,
+        "JsonRequestBehavior": 1,
+        "MaxJsonLength": 2147483647,
+        "Data": [
+          {
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 0,
+            "ToolTipText": "Start",
+            "SortKey": 0,
+            "IsRule": false,
+            "IsEnd": false,
+            "IsActivity": true,
+            "IsClient": false,
+            "EntryCondition": 1,
+            "FontSize": 0,
+            "FullName": "开始[]",
+            "X": 0,
+            "DisplayName": "开始",
+            "Y": 0,
+            "Height": 0,
+            "Id": 0,
+            "Width": 0,
+            "IsApproveActivity": false
+          },
+          {
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 1,
+            "ToolTipText": "End",
+            "SortKey": 0,
+            "IsRule": false,
+            "IsEnd": true,
+            "IsActivity": true,
+            "IsClient": false,
+            "EntryCondition": 1,
+            "FontSize": 0,
+            "FullName": "结束[]",
+            "X": 0,
+            "DisplayName": "结束",
+            "Y": 0,
+            "Height": 0,
+            "Id": 0,
+            "Width": 0,
+            "IsApproveActivity": false
+          },
+          {
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 15,
+            "ToolTipText": "Notify",
+            "SortKey": 0,
+            "IsRule": false,
+            "IsEnd": false,
+            "IsActivity": true,
+            "IsClient": false,
+            "EntryCondition": 1,
+            "FontSize": 0,
+            "FullName": "功能节点[]",
+            "X": 0,
+            "DisplayName": "功能节点",
+            "Y": 0,
+            "Height": 0,
+            "Id": 0,
+            "Width": 0,
+            "IsApproveActivity": false
+          },
+          {
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 2,
+            "ToolTipText": "Connection",
+            "SortKey": 0,
+            "IsRule": false,
+            "IsEnd": false,
+            "IsActivity": true,
+            "IsClient": false,
+            "EntryCondition": 1,
+            "FontSize": 0,
+            "FullName": "连接点[]",
+            "X": 0,
+            "DisplayName": "连接点",
+            "Y": 0,
+            "Height": 0,
+            "Id": 0,
+            "Width": 0,
+            "IsApproveActivity": false
+          },
+          {
+            "ToolTipText": "Circulate",
+            "SortKey": 0,
+            "NoParticipantPolicy": 0,
+            "IsEnd": false,
+            "Participants": null,
+            "EntryCondition": 1,
+            "WorkItemDisplayName": null,
+            "X": 0,
+            "DisplayName": "传阅",
+            "Y": 0,
+            "Height": 0,
+            "DuplicatedParticipantPolicy": 0,
+            "PropertyPermissions": null,
+            "Width": 0,
+            "IsApproveActivity": false,
+            "AllowedTime": null,
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 25,
+            "IsRule": false,
+            "IsActivity": true,
+            "IsClient": false,
+            "FontSize": 0,
+            "FullName": "传阅[]",
+            "Id": 0
+          },
+          {
+            "PermittedActions": {},
+            "ToolTipText": "Approve",
+            "DisapproveExit": "1",
+            "SortKey": 0,
+            "NoParticipantPolicy": 0,
+            "IsEnd": false,
+            "Participants": null,
+            "DisapproveExitType": 1,
+            "EntryCondition": 1,
+            "WorkItemDisplayName": null,
+            "X": 0,
+            "DisplayName": "审批",
+            "Y": 0,
+            "Height": 0,
+            "ParticipateMethod": 0,
+            "PropertyPermissions": null,
+            "Width": 0,
+            "DisapproveExitActivityCode": null,
+            "IsApproveActivity": true,
+            "FinishExit": "1",
+            "ApproveExit": "100%",
+            "AllowedTime": null,
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 4,
+            "IsRule": false,
+            "IsActivity": true,
+            "IsClient": true,
+            "FontSize": 0,
+            "FullName": "审批[]",
+            "ParticipateType": 2,
+            "Id": 0
+          },
+          {
+            "SchemaCode": null,
+            "ToolTipText": "SubInstance",
+            "DisapproveExit": "1",
+            "SortKey": 0,
+            "IsEnd": false,
+            "Participants": null,
+            "WorkflowVersion": 0,
+            "EntryCondition": 1,
+            "X": 0,
+            "DisplayName": "子流程",
+            "Y": 0,
+            "Height": 0,
+            "ParticipateMethod": 0,
+            "Sync": false,
+            "Width": 0,
+            "IsApproveActivity": false,
+            "FinishExit": "1",
+            "ApproveExit": "100%",
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 9,
+            "IsRule": false,
+            "IsActivity": true,
+            "IsClient": false,
+            "FontSize": 0,
+            "FullName": "子流程[]",
+            "DataMaps": null,
+            "FinishStartActivity": false,
+            "ParticipateType": 2,
+            "Id": 0
+          },
+          {
+            "PermittedActions": "手工[]",
+            "ToolTipText": "FillSheet",
+            "SortKey": 0,
+            "NoParticipantPolicy": 0,
+            "IsEnd": false,
+            "Participants": null,
+            "EntryCondition": 1,
+            "WorkItemDisplayName": null,
+            "X": 0,
+            "DisplayName": "手工",
+            "Y": 0,
+            "Height": 0,
+            "ParticipateMethod": 0,
+            "DuplicatedParticipantPolicy": 0,
+            "PropertyPermissions": null,
+            "Width": 0,
+            "IsApproveActivity": false,
+            "FinishExit": "1",
+            "ApproveExit": "100%",
+            "AllowedTime": null,
+            "ActivityCode": null,
+            "FontColor": null,
+            "ActivityType": 3,
+            "IsRule": false,
+            "IsActivity": true,
+            "IsClient": true,
+            "FontSize": 0,
+            "FullName": "手工[]",
+            "ParticipateType": 2,
+            "Id": 0
+          }
+        ],
+        "ContentEncoding": null
+      },
+      "WorkItems": null,
+      "ExceptionActivities": null,
+      "WorkflowTemplate": {
+        "RecursionLimit": null,
+        "ContentType": null,
+        "JsonRequestBehavior": 1,
+        "MaxJsonLength": 2147483647,
+        "Data": {
+          "Activities": [
+            {
+              "ActivityCode": "Activity1",
+              "FontSize": 12,
+              "DisplayName": "开始",
+              "ActivityType": "Start",
+              "X": 261,
+              "Y": 91,
+              "Height": 42,
+              "Id": "abdd9ba0a-0478-4021-8c17-1691a64faa64",
+              "PropertyPermissions": [
+                {
+                  "PropertyName": "F0000002",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "CreatedBy",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "SeqNo",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000004",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000003",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000033",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F19113bae1f8f4f11b7f892884ffb4a49",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000038",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000015",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000018",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F751436a7e4d14a92855572bfaefba4f3",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000037",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000027",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000036",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000012",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000021",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000010",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000005",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000024",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000032",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000035",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000016",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000007",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000031",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000026",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000019",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000030",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000029",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": true,
+                  "Printable": false
+                }
+              ],
+              "isRun": false,
+              "Width": 122
+            },
+            {
+              "ActivityCode": "Activity4",
+              "FontSize": 13,
+              "DisplayName": "结束",
+              "ActivityType": "End",
+              "X": 261,
+              "Y": 391,
+              "Height": 42,
+              "Id": "ab17c2b43-854e-446c-a9c0-636b5e0247d9",
+              "isRun": false,
+              "Width": 122
+            },
+            {
+              "ApproveExit": "100%",
+              "AllowedTime": null,
+              "ActivityCode": "Activity6",
+              "ActivityType": "Approve",
+              "DisapproveExit": "1",
+              "NoParticipantPolicy": null,
+              "Participants": "u(165643170521261215)",
+              "DisapproveExitType": 1,
+              "FontSize": 13,
+              "OvertimePolicy": "2",
+              "DisplayName": "审批节点",
+              "X": 261,
+              "Y": 221,
+              "ParticipateMethod": "0",
+              "Height": 42,
+              "Id": "ae3c2dda5-6d39-4b0a-a1c5-01c145b2a8fb",
+              "PropertyPermissions": [
+                {
+                  "PropertyName": "F0000002",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "CreatedBy",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "SeqNo",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000004",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000003",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000033",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F19113bae1f8f4f11b7f892884ffb4a49",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000038",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000015",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000018",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F751436a7e4d14a92855572bfaefba4f3",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000037",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000027",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000036",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000012",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000021",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000010",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000005",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000024",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000032",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000035",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000016",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000007",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000031",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000026",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000019",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000030",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000029",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                }
+              ],
+              "isRun": true,
+              "DisapproveExitActivityCode": null,
+              "Width": 122
+            },
+            {
+              "ActivityCode": "Activity7",
+              "ActivityType": "Circulate",
+              "Participants": "u(094761000632716601)",
+              "FontSize": 13,
+              "WorkItemDisplayName": "",
+              "OvertimePolicy": "2",
+              "DisplayName": "抄送节点",
+              "X": 492,
+              "Y": 91,
+              "Height": 42,
+              "Id": "a864674d7-0dcc-4dcf-b030-5ce9b50ab79c",
+              "PropertyPermissions": [
+                {
+                  "PropertyName": "F0000002",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "CreatedBy",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "SeqNo",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000004",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000003",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": true
+                },
+                {
+                  "PropertyName": "F0000033",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F19113bae1f8f4f11b7f892884ffb4a49",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000038",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000015",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000018",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F751436a7e4d14a92855572bfaefba4f3",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000037",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000027",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000036",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000012",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000021",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000010",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000005",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000024",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000032",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000035",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000016",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000007",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000031",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000026",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000019",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000030",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                },
+                {
+                  "PropertyName": "F0000029",
+                  "TrackVisible": false,
+                  "Required": false,
+                  "Visible": true,
+                  "Editable": false,
+                  "Printable": false
+                }
+              ],
+              "isRun": true,
+              "Width": 122
+            }
+          ],
+          "Description": "",
+          "SchemaCode": "1c77d78acf964d698ea16c6b43cb72b067693335",
+          "WorkflowName": null,
+          "WorkflowVersion": 0,
+          "WorkflowFullName": "1c77d78acf964d698ea16c6b43cb72b067693335.0",
+          "Rules": [
+            {
+              "PreActivityCode": "Activity1",
+              "Formula": null,
+              "Points": [
+                "322,91",
+                "431,91"
+              ],
+              "Exclusive": false,
+              "DisplayName": null,
+              "Id": "a02489662-7ea1-4d77-b79d-aae65c0d9f36",
+              "PostActivityCode": "Activity7"
+            },
+            {
+              "PreActivityCode": "Activity1",
+              "Formula": null,
+              "Points": [
+                "261,112",
+                "261,200"
+              ],
+              "Exclusive": false,
+              "DisplayName": null,
+              "Id": "abcc2a216-7285-4bb5-9dba-7ab9c81f3ff0",
+              "PostActivityCode": "Activity6"
+            },
+            {
+              "PreActivityCode": "Activity6",
+              "Formula": null,
+              "Points": [
+                "261,242",
+                "261,370"
+              ],
+              "Exclusive": false,
+              "DisplayName": null,
+              "Id": "aa7737d85-8c23-4373-bce1-bec43e5325f3",
+              "PostActivityCode": "Activity4"
+            }
+          ],
+          "EndActivityCode": "Activity4",
+          "StartActivity": {
+            "ActivityCode": "Activity1",
+            "FontSize": 12,
+            "DisplayName": "开始",
+            "ActivityType": "Start",
+            "X": 261,
+            "Y": 91,
+            "Height": 42,
+            "Id": "abdd9ba0a-0478-4021-8c17-1691a64faa64",
+            "PropertyPermissions": [
+              {
+                "PropertyName": "F0000002",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": true
+              },
+              {
+                "PropertyName": "CreatedBy",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": true
+              },
+              {
+                "PropertyName": "SeqNo",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": true
+              },
+              {
+                "PropertyName": "F0000004",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": true
+              },
+              {
+                "PropertyName": "F0000003",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": true
+              },
+              {
+                "PropertyName": "F0000033",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F19113bae1f8f4f11b7f892884ffb4a49",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000038",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000015",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000018",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F751436a7e4d14a92855572bfaefba4f3",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000037",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000027",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000036",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000012",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000021",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000010",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000005",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000024",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000032",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000035",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000016",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000007",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000031",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000026",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000019",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000030",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              },
+              {
+                "PropertyName": "F0000029",
+                "TrackVisible": false,
+                "Required": false,
+                "Visible": true,
+                "Editable": true,
+                "Printable": false
+              }
+            ],
+            "Width": 122
+          },
+          "InstanceName": "",
+          "StartActivityCode": "Activity1",
+          "StartWithForm": false,
+          "Height": 0,
+          "Width": 0,
+          "EndActivity": {
+            "ActivityCode": "Activity4",
+            "FontSize": 13,
+            "DisplayName": "结束",
+            "ActivityType": "End",
+            "X": 261,
+            "Y": 391,
+            "Height": 42,
+            "Id": "ab17c2b43-854e-446c-a9c0-636b5e0247d9",
+            "Width": 122
+          },
+          "PlanUsedTime": ""
+        },
+        "ContentEncoding": null
+      },
+      "WorkflowInstance": {
+        "RecursionLimit": null,
+        "ContentType": null,
+        "JsonRequestBehavior": 1,
+        "MaxJsonLength": 2147483647,
+        "Data": {
+          "ParentInstanceId": null,
+          "SchemaCode": "1c77d78acf964d698ea16c6b43cb72b067693335",
+          "CreatedTime": "\\/Date(1530500790000)\\/",
+          "Remind": true,
+          "DirtyProperties": [],
+          "WorkflowVersion": 1,
+          "ParentPropertyName": null,
+          "StayTime": null,
+          "AppCode": "",
+          "FinishTime": null,
+          "Originator": "",
+          "FinalTokenId": 3,
+          "ParentIndex": 0,
+          "Approval": 1,
+          "NotifyParentFinished": false,
+          "Tokens": null,
+          "InstanceId": "6acab430-192e-11e9-97c4-5254008acdc9",
+          "ObjectId": "9b904493e34e45cf833397a57bf2f386",
+          "ParentActivityTokenId": -1,
+          "StartTime": null,
+          "NextTokenId": 4,
+          "InstanceName": "胡笑莉抄送",
+          "IsCanceled": false,
+          "IsUnfinished": true,
+          "RunningActivties": [
+            "ae3c2dda5-6d39-4b0a-a1c5-01c145b2a8fb",
+            "a864674d7-0dcc-4dcf-b030-5ce9b50ab79c"
+          ],
+          "WorkflowDisplayName": null,
+          "State": 2,
+          "PlanFinishTime": null,
+          "ParentActivityCode": "",
+          "UsedTime": null,
+          "IsChildInstance": false,
+          "InitiativeTokenId": 1,
+          "BizObjectId": "9b904493e34e45cf833397a57bf2f386",
+          "OriginatorParent": "",
+          "IsFinished": false,
+          "UsedTimeRate": null,
+          "ParentObjectId": null
+        },
+        "ContentEncoding": null
+      }
+    }
+  }
+}
