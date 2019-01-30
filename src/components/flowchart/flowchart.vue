@@ -2,17 +2,17 @@
   <div id="mountNode"></div>
 </template>
 <script>
-import G6 from '@antv/g6';
+import G6 from '@antv/g6'
+import '@antv/g6/build/plugin.edge.polyline'
 import './flowchart.js'
 import API from '@/api/api.json'
-const winW = document.body.offsetWidth
 
 export default {
   name: 'flowchart',
   data () {
     return {
-      nodes: [],
-      edges: []
+      nodes: [], // 流程节点
+      edges: [] // 链接流程的边
     }
   },
   mounted () {
@@ -20,27 +20,27 @@ export default {
     const Rules = API.ReturnData.datas.WorkflowTemplate.Data.Rules
     const { graphWidth, graphHeight, minX, minY } = this.getGraphSize(Activities)
     this.setNodes(Activities, minX, minY)
-    this.setEdges(Rules)
+    this.setEdges(Rules, minX, minY)
     const data = {
       nodes: JSON.parse(JSON.stringify(this.nodes)),
       edges: JSON.parse(JSON.stringify(this.edges))
     };
     const graph = new G6.Graph({
       container: 'mountNode',
-      fitview: 'autoZoom', // 为了防止布局超出屏幕，使用 fitview: 'autoZoom' 进行自动放缩
       width: graphWidth,
       height: graphHeight
     });
     graph.read(data);
   },
   methods: {
+    // 设置流程节点
     setNodes (list, minX, minY) {
       list.forEach(item => {
         this.nodes.push({
           shape: 'customNode',
           id: item.ActivityCode,
-          x: item.X - minX,
-          y: item.Y - minY,
+          x: item.X - item.Width / 2 - minX,
+          y: item.Y - item.Height / 2 - minY,
           width: item.Width,
           height: item.Height,
           text: item.DisplayName,
@@ -48,38 +48,63 @@ export default {
         })
       })
     },
-    setEdges (list) {
+    setEdges (list, minX, minY) {
       list.forEach(item => {
+        let points = []
+        item.Points.forEach((point, index) => {
+          if(index > 0 && index < item.Points.length - 1) {
+            const pointArrs = point.split(',')
+            points.push({
+              x: pointArrs[0] - minX,
+              y: pointArrs[1] - minY
+            })
+          }
+        })
         this.edges.push({
           id: item.Id,
           source: item.PreActivityCode,
           target: item.PostActivityCode,
           color: '#37ABFD',
-          endArrow: true
+          endArrow: true,
+          controlPoints: points,
+          label: {
+            text: item.DisplayName || '',
+            fill: '#37ABFD'
+          },
+          labelRectStyle: {
+            fill: 'transparent'
+          }
+          // shape: 'polyline-round'
         })
       })
     },
     getGraphSize (list) {
+      // X轴最大坐标值
       let maxX = 0
+      // Y轴最大坐标值
       let maxY = 0
+      // X轴最小坐标值
       let minX = 0
+      // Y轴最小坐标值
       let minY = 0
+      // 空隙
+      const SPACE = 10
       list.forEach((item, index) => {
         if (index === 0) {
-          minX = item.X
-          minY = item.Y
+          minX = item.X - item.Width / 2
+          minY = item.Y - item.Height / 2
         } else {
-          minX = item.X < minX ? item.X : minX
-          minY = item.Y < minY ? item.Y : minY
+          minX = item.X < minX ? item.X - item.Width / 2 : minX
+          minY = item.Y < minY ? item.Y - item.Height / 2 : minY
         }
-        maxX = (item.X + item.Width) > maxX ? item.X + item.Width : maxX
-        maxY = (item.Y + item.Height) > maxY ? item.Y + item.Height : maxY
+        maxX = (item.X + item.Width / 2) > maxX ? item.X + item.Width / 2 : maxX
+        maxY = (item.Y + item.Height / 2) > maxY ? item.Y + item.Height / 2 : maxY
       })
       return {
-        graphWidth: maxX - minX,
-        graphHeight: maxY - minY,
-        minX,
-        minY
+        graphWidth: maxX - minX + SPACE, // 画布宽度
+        graphHeight: maxY - minY + SPACE, // 画布高度
+        minX: minX - SPACE / 2,
+        minY: minY - SPACE / 2
       }
     }
   }
