@@ -44,7 +44,8 @@ export default {
           width: item.Width,
           height: item.Height,
           text: item.DisplayName,
-          isRun: item.isRun
+          isRun: item.isRun,
+          type: item.ActivityType.toLowerCase()
         })
       })
     },
