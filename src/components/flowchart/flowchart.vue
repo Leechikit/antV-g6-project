@@ -88,6 +88,7 @@ export default {
         })
       })
     },
+    // 获取画布信息
     getGraphSize (list) {
       // X轴最大坐标值
       let maxX = 0
