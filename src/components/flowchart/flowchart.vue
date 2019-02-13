@@ -16,8 +16,7 @@ export default {
     }
   },
   mounted () {
-    const Activities = API.ReturnData.datas.WorkflowTemplate.Data.Activities
-    const Rules = API.ReturnData.datas.WorkflowTemplate.Data.Rules
+    const { Activities, Rules } = this.getData()
     const { graphWidth, graphHeight, minX, minY } = this.getGraphSize(Activities)
     this.setNodes(Activities, minX, minY)
     this.setEdges(Rules, minX, minY)
@@ -33,6 +32,15 @@ export default {
     graph.read(data);
   },
   methods: {
+    // 获取数据
+    getData () {
+      const Activities = API.ReturnData.datas.WorkflowTemplate.Data.Activities
+      const Rules = API.ReturnData.datas.WorkflowTemplate.Data.Rules
+      return {
+        Activities,
+        Rules
+      }
+    },
     // 设置流程节点
     setNodes (list, minX, minY) {
       list.forEach(item => {
@@ -49,11 +57,12 @@ export default {
         })
       })
     },
+    // 设置流程的边
     setEdges (list, minX, minY) {
       list.forEach(item => {
         let points = []
         item.Points.forEach((point, index) => {
-          if(index > 0 && index < item.Points.length - 1) {
+          if (index > 0 && index < item.Points.length - 1) {
             const pointArrs = point.split(',')
             points.push({
               x: pointArrs[0] - minX,
@@ -104,8 +113,8 @@ export default {
       return {
         graphWidth: maxX - minX + SPACE, // 画布宽度
         graphHeight: maxY - minY + SPACE, // 画布高度
-        minX: minX - SPACE / 2,
-        minY: minY - SPACE / 2
+        minX: minX - SPACE / 2, // 最左边离画布边界距离
+        minY: minY - SPACE / 2 // 最上边离画布边界距离
       }
     }
   }
