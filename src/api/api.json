@@ -429,7 +429,7 @@
           "Rules": [
             {
               "PreActivityCode": "Activity1",
-              "Formula": null,
+              "Formula": "{F00001*10}",
               "Points": [
                 "200,91",
                 "157,91"

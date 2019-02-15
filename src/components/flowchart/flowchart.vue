@@ -1,5 +1,7 @@
 <template>
-  <div id="mountNode"></div>
+  <div class="flowchart">
+    <div id="mountNode"></div>
+  </div>
 </template>
 <script>
 import G6 from '@antv/g6'
@@ -74,12 +76,12 @@ export default {
           id: item.Id,
           source: item.PreActivityCode,
           target: item.PostActivityCode,
-          color: '#37ABFD',
+          color: item.Formula ? '#2bbd44' : '#37ABFD',
           endArrow: true,
           controlPoints: points,
           label: {
             text: item.DisplayName || '',
-            fill: '#37ABFD'
+            fill: item.Formula ? '#2bbd44' : '#37ABFD'
           },
           labelRectStyle: {
             fill: 'transparent'
